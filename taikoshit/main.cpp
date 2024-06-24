@@ -32,7 +32,7 @@ int main() {
     int offsetmax = 20;
     int offset;
 
-    std::cout << "Ahorn Taiko - v0.3 B10032023\n";
+    std::cout << "Ahorn Taiko - v0.3 B10.03.2023\n";
     std::cout << "DELETE>  Panic Exit\n";
     std::cout << "F9>  Start Bot\n";
     std::cout << "F10>  Stop Bot\n";
@@ -164,8 +164,6 @@ int main() {
                 std::this_thread::sleep_for(std::chrono::milliseconds(10));
                 keybd_event(static_cast<BYTE>(kakey), 0, KEYEVENTF_KEYUP, 0);
                 std::this_thread::sleep_for(std::chrono::milliseconds(5));
-
-                
             }
             
             if (red >= 245 && red <= 255 && green >= 175 && green <= 190 && blue >= 0 && blue <= 15) {
@@ -188,8 +186,6 @@ int main() {
                 std::this_thread::sleep_for(std::chrono::milliseconds(10));
                 keybd_event(static_cast<BYTE>(kakey), 0, KEYEVENTF_KEYUP, 0);
                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
-
-
             }
             if (sred >= 195 && sred <= 210 && sgreen >= 0 && sgreen <= 10 && sblue >= 170 && sblue <= 185) {
                 
@@ -213,23 +209,10 @@ int main() {
                 std::this_thread::sleep_for(std::chrono::milliseconds(5));
                 keybd_event(spinnerkey, 0, KEYEVENTF_KEYUP, 0);
                 std::this_thread::sleep_for(std::chrono::milliseconds(1));
-            }
-
-        
+            }  
         }
-
     }
             
-
-            
-            
-        
-
-        
-        
-    
-
-    
     ReleaseDC(hwndDesktop, hdcDesktop);
 
     return 0;
